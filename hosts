@@ -21,4 +21,8 @@ server3 ansible_host=188.166.123.245
 #########################################################################
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3
+ansible_connection=ssh
+ansible_user=user
+ansible_password=pass
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
